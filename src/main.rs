@@ -85,7 +85,9 @@ async fn main() {
 
     let mut objects: Vec<Object> = vec![
         Object{position: Vec2::new(0.5, 0.3), velocity: Vec2::new(0.0, 0.0), mass: 2000.0},
-        Object{position: Vec2::new(100.0, 0.3), velocity: Vec2::new(0.0, 30.0), mass: 1.0}
+        Object{position: Vec2::new(100.0, 0.3), velocity: Vec2::new(0.0, 30.0), mass: 1.0},
+        Object{position: Vec2::new(-100.0, -30.0), velocity: Vec2::new(20.0, -20.0), mass: 1.0},
+        Object{position: Vec2::new(-200.0, 40.0), velocity: Vec2::new(0.0, -10.0), mass: 1.0},
     ];
 
     let trail_length = 5000;
