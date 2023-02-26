@@ -78,11 +78,6 @@ mod tests {
 
 #[macroquad::main("Orbital Simulation")]
 async fn main() {
-    #[cfg(target_family = "wasm")]
-    set_pc_assets_folder("/wasm&rust_post");
-    #[cfg(not(target_family = "wasm"))]
-    set_pc_assets_folder("./assets");
-
     let mut objects: Vec<Object> = vec![
         Object{position: Vec2::new(0.5, 0.3), velocity: Vec2::new(0.0, 0.0), mass: 2000.0},
         Object{position: Vec2::new(100.0, 0.3), velocity: Vec2::new(0.0, 30.0), mass: 1.0},
